@@ -1,6 +1,10 @@
-const enum DbCollection {
+export const enum DbCollection {
   user = "user",
   restaurant = "restaurant",
 }
-
-export { DbCollection };
+export interface userInterface{
+  email:string;
+  password:string;
+  role:string;  
+  timestamp:Date;
+}
